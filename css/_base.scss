@@ -1,0 +1,164 @@
+// COLOR VARIABLES
+$background-primary: #374464;
+$text-primary: #000;
+$grey-light: #f5f5f5;
+$grey-mid: #d3d3d3;
+$grey-dark: #808080;
+$red-light: #9b2222;
+$red-mid: #8f0000;
+$red-dark: #660000;
+$shadow: #3f3f3f;
+
+// FONT VARIABLES
+$font-primary: "Saira Stencil One", cursive;
+$font-secondary: monospace;
+
+// General Stylings
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  font-size: 13px;
+}
+
+body {
+  font-family: $font-primary;
+  color: $grey-light;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: $background-primary;
+}
+
+.box {
+  background-color: $grey-light;
+}
+
+/* Body Settings */
+
+.container {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+/* Frame Styles */
+
+.frame {
+  display: grid;
+  width: 50rem;
+  background-color: $red-mid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.75rem;
+
+  /* Heading Styles */
+
+  & .frame__heading {
+    display: grid;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    color: $grey-light;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    text-shadow: 0 0.25rem $red-dark;
+  }
+
+  /* Board Styles */
+
+  & .board {
+    display: grid;
+    width: 40rem;
+    height: 40rem;
+    grid-column: 1/4;
+    justify-self: center;
+    border-top: 2rem solid $red-dark;
+    border-right: 1rem solid $red-light;
+    border-bottom: 2rem solid $red-dark;
+    border-left: 1rem solid $red-light;
+    border-radius: 0.75rem;
+    background-color: $grey-light;
+  }
+}
+
+.btn {
+  width: 12rem;
+  height: 4rem;
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  background-color: $grey-light;
+  text-align: center;
+  font-weight: 700;
+  color: rgba(4, 7, 7, 0.75);
+  border-right: 0.5rem solid $grey-dark;
+  border-top: 0.5rem solid $grey-mid;
+  border-left: 0.5rem solid $grey-dark;
+  border-bottom: 0.5rem solid $grey-mid;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem $shadow;
+  margin: 1rem 0 1.5rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.btn:active {
+  box-shadow: 0 0.25rem rgba(40, 46, 46, 0.75);
+  transform: translateY(0.25rem);
+}
+
+.btn:hover {
+  background-color: $shadow;
+  color: $grey-light;
+}
+
+.btn-round {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 7rem;
+  text-transform: uppercase;
+}
+
+.btn__theme {
+  justify-self: flex-start;
+  margin-left: 1rem;
+}
+
+.btn__reset {
+  justify-self: flex-end;
+  margin-right: 1rem;
+}
+
+/* Signature */
+
+.signature {
+  display: block;
+}
+
+.signature__text {
+  font-family: $font-secondary;
+  font-size: 1rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.github__icon {
+  width: 2rem;
+  display: inline-block;
+  position: relative;
+  top: 0.65rem;
+  right: 0.65rem;
+}
+
+.signature__text a {
+  color: $grey-light;
+}

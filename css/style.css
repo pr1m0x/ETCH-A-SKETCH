@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  font-size: 13px; }
+
+body {
+  font-family: "Saira Stencil One", cursive;
+  color: #f5f5f5;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #374464; }
+
+.box {
+  background-color: #f5f5f5; }
+
+/* Body Settings */
+.container {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center; }
+
+/* Frame Styles */
+.frame {
+  display: grid;
+  width: 50rem;
+  background-color: #8f0000;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.75rem;
+  /* Heading Styles */
+  /* Board Styles */ }
+  .frame .frame__heading {
+    display: grid;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    color: #f5f5f5;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    text-shadow: 0 0.25rem #660000; }
+  .frame .board {
+    display: grid;
+    width: 40rem;
+    height: 40rem;
+    grid-column: 1/4;
+    justify-self: center;
+    border-top: 2rem solid #660000;
+    border-right: 1rem solid #9b2222;
+    border-bottom: 2rem solid #660000;
+    border-left: 1rem solid #9b2222;
+    border-radius: 0.75rem;
+    background-color: #f5f5f5; }
+
+.btn {
+  width: 12rem;
+  height: 4rem;
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-weight: 700;
+  color: rgba(4, 7, 7, 0.75);
+  border-right: 0.5rem solid #808080;
+  border-top: 0.5rem solid #d3d3d3;
+  border-left: 0.5rem solid #808080;
+  border-bottom: 0.5rem solid #d3d3d3;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem #3f3f3f;
+  margin: 1rem 0 1.5rem 0;
+  letter-spacing: 0.1rem; }
+
+.btn:active {
+  box-shadow: 0 0.25rem rgba(40, 46, 46, 0.75);
+  transform: translateY(0.25rem); }
+
+.btn:hover {
+  background-color: #3f3f3f;
+  color: #f5f5f5; }
+
+.btn-round {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 7rem;
+  text-transform: uppercase; }
+
+.btn__theme {
+  justify-self: flex-start;
+  margin-left: 1rem; }
+
+.btn__reset {
+  justify-self: flex-end;
+  margin-right: 1rem; }
+
+/* Signature */
+.signature {
+  display: block; }
+
+.signature__text {
+  font-family: monospace;
+  font-size: 1rem;
+  margin-top: 2rem;
+  display: inline-block; }
+
+.github__icon {
+  width: 2rem;
+  display: inline-block;
+  position: relative;
+  top: 0.65rem;
+  right: 0.65rem; }
+
+.signature__text a {
+  color: #f5f5f5; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #000;
+  line-height: 1; }
+
+.heading-2 {
+  font-size: 3rem;
+  color: #000;
+  line-height: 1; }
+
+.heading-3 {
+  font-size: 2rem;
+  color: #000;
+  line-height: 1; }
+
+.heading-4 {
+  font-size: 1.5rem;
+  color: #000;
+  line-height: 1; }
