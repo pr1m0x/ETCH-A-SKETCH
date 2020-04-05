@@ -2,30 +2,6 @@
 // ========================
 // Variables
 // ========================
-
-// ========================
-// Functions
-// ========================
-
-// ========================
-// Loops
-// ========================
-
-// ========================
-// Events
-// ========================
-
-// ========================
-// Execution
-// ========================
-
-/**
- * Copy of the all-components.js to use the created functionalities if needed
- */
-
-// ========================
-// Variables
-// ========================
 const board = document.querySelector(".board");
 const boxes = document.getElementsByClassName("box");
 
@@ -80,9 +56,6 @@ function getThemeColor(theme) {
   }
   return currentColor;
 }
-// ========================
-// Loops
-// ========================
 
 // ========================
 // Events & Logic
